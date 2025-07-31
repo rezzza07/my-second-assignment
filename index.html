@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Second Assignment</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Responsive Header</title>
 </head>
 <body>
-    
+  <header class="px-4 md:px-36 py-4">
+    <nav class="grid grid-cols-2 items-center">
+    <div class="flex justify-start">
+        <img src="assets/logo.png" alt="Logo" class="h-10" />
+      </div>
+
+      <ul class="flex justify-end items-center gap-8 text-xl">
+        <li class="font-bold hidden sm:inline">Home</li>
+        <li class="text-gray-500 hidden sm:inline">Shop</li>
+        <li class="text-gray-500 hidden sm:inline">About Us</li>
+        <li>Cart ($56)</li>
+      </ul>
+    </nav>
+ </header>
+ <main class="max-w-7xl mx-auto mt-10 p-10">
+  <header class="md:flex items-center">
+     <div class="space-y-4">
+       <h1 class="text-5xl md:text-4xl font-bold leading-snug">ALWAYS <span class="text-orange-600 font-bold">FRESH <br> FLOWERS</span></h1>
+     <p class="text-2xl text-gray-500">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
+     </div>
+
+     <img src="assets/hero-flower.png" alt="">
+
+
+  </header>
+
+ </main>
 </body>
 </html>
